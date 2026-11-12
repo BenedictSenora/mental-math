@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doubling & Halving Trick - Mental Math Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="page-header">
+        <h1>The Doubling &amp; Halving Trick</h1>
+        <p>Core Arithmetic Module 6 of 6</p>
+        <input class="theme-switch" type="checkbox" id="theme-switch" aria-label="Enable dark mode">
+        <label class="theme-toggle" for="theme-switch"><span class="light-label">☾ <span>Dark mode</span></span><span class="dark-label">☀ <span>Light mode</span></span></label>
+    </header>
+
+    <main class="content-container">
+        <section class="tutorial-card">
+            <h2>Transforming Hard Multiplication</h2>
+            <p>In multiplication, if you double one factor and cut the other factor in half, the final product stays completely unchanged.</p>
+            <p>Formula: A \times B = (2A) \times (B \div 2).</p>
+        </section>
+
+        <section class="tutorial-card">
+            <h2>3-Step Tutorial</h2>
+            <ol class="step-list">
+                <li><strong>Spot an awkward number ending in 5</strong> (like 15, 25, or 35) paired with an even number.</li>
+                <li><strong>Double the number ending in 5</strong> to turn it into a clean multiple of 10.</li>
+                <li><strong>Cut the even number in half</strong>, then multiply the two new easy numbers together.</li>
+            </ol>
+        </section>
+
+        <!-- Tutorial Card 1 -->
+        <section class="tutorial-card">
+            <h2>Tutorial 1: Single Step Doubling &amp; Halving</h2>
+            <p>Use one round of doubling and halving to eliminate messy 5s immediately.</p>
+            <div class="example-box" style="margin-top: 1rem;">
+                <h3>Example: 16 &times; 35</h3>
+                <p>1. Double 35 &rarr; <strong>70</strong>.</p>
+                <p>2. Halve 16 &rarr; <strong>8</strong>.</p>
+                <p>3. Multiply the easy numbers: 8 &times; 70 = <strong>560</strong>.</p>
+            </div>
+        </section>
+
+        <!-- Tutorial Card 2 -->
+        <section class="tutorial-card">
+            <h2>Tutorial 2: Double-Step Transformation</h2>
+            <p>For numbers ending in 25 or 75, repeat the trick twice to turn them into 100 or 300.</p>
+            <div class="example-box" style="margin-top: 1rem;">
+                <h3>Example: 24 &times; 25</h3>
+                <p>1. First step: 12 &times; 50.</p>
+                <p>2. Second step: 6 &times; 100 = <strong>600</strong>.</p>
+            </div>
+        </section>
+
+        <!-- Practice Checks -->
+        <section class="tutorial-card">
+            <h2>Quick Practice Checks</h2>
+            
+            <div style="margin-top: 0.5rem; padding-bottom: 0.75rem;">
+                <p><strong>Practice 1:</strong> Solve <strong>14 &times; 45</strong> using doubling and halving.</p>
+                <details class="answer-reveal">
+                    <summary>Click to Reveal Solution</summary>
+                    <p>Halve 14 (7) &times; Double 45 (90) = <strong>630</strong>.</p>
+                </details>
+            </div>
+
+            <div style="margin-top: 0.75rem; border-top: 1px solid #e2e8f0; padding-top: 0.75rem;">
+                <p><strong>Practice 2:</strong> Solve <strong>32 &times; 25</strong> in your head.</p>
+                <details class="answer-reveal">
+                    <summary>Click to Reveal Solution</summary>
+                    <p>16 &times; 50 &rarr; 8 &times; 100 = <strong>800</strong>.</p>
+                </details>
+            </div>
+        </section>
+
+        <a href="index.html" class="back-btn">&larr; Back to Home</a>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 RapidMath Guide | Bancil, Jelaine &bull; Tawagun, Mohaysin &bull; Tibay, Justin</p>
+    </footer>
+</body>
+</html>

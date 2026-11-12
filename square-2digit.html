@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Squaring Any 2-Digit Number - Mental Math Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="page-header">
+        <h1>Squaring Any 2-Digit Number</h1>
+        <p>Advanced Multiplication Module 2 of 4</p>
+        <input class="theme-switch" type="checkbox" id="theme-switch" aria-label="Enable dark mode">
+        <label class="theme-toggle" for="theme-switch"><span class="light-label">☾ <span>Dark mode</span></span><span class="dark-label">☀ <span>Light mode</span></span></label>
+    </header>
+
+    <main class="content-container">
+        <section class="tutorial-card">
+            <h2>The Algebraic Identity Framework</h2>
+            <p>Squaring numbers close to clean base numbers (like 50 or 100) uses the difference-of-squares concept: a^2 - b^2 = (a - b)(a + b).</p>
+            <p>Pattern: Anchor your calculation around the distance (d) from the base value of 50.</p>
+        </section>
+
+        <section class="tutorial-card">
+            <h2>3-Step Base-50 Tutorial</h2>
+            <ol class="step-list">
+                <li><strong>Find the distance (d)</strong> your number is from 50.</li>
+                <li><strong>Add or subtract d from 25</strong> to get your first two digits.</li>
+                <li><strong>Square the distance (d^2)</strong> and place it at the end (use two digits, e.g., 9 becomes 09).</li>
+            </ol>
+        </section>
+
+        <!-- Tutorial Card 1 -->
+        <section class="tutorial-card">
+            <h2>Tutorial 1: Numbers Above 50</h2>
+            <p>Add the distance to 25 for numbers greater than 50.</p>
+            <div class="example-box" style="margin-top: 1rem;">
+                <h3>Example: 53&sup2;</h3>
+                <p>1. Distance from 50 is d = 3.</p>
+                <p>2. Add to 25: 25 + 3 = <strong>28</strong>.</p>
+                <p>3. Square distance: 3^2 = 09 &rarr; Answer: <strong>2,809</strong>.</p>
+            </div>
+        </section>
+
+        <!-- Tutorial Card 2 -->
+        <section class="tutorial-card">
+            <h2>Tutorial 2: Numbers Below 50</h2>
+            <p>Subtract the distance from 25 for numbers less than 50.</p>
+            <div class="example-box" style="margin-top: 1rem;">
+                <h3>Example: 48&sup2;</h3>
+                <p>1. Distance from 50 is d = 2 (below).</p>
+                <p>2. Subtract from 25: 25 - 2 = <strong>23</strong>.</p>
+                <p>3. Square distance: 2^2 = 04 &rarr; Answer: <strong>2,304</strong>.</p>
+            </div>
+        </section>
+
+        <!-- Practice Checks -->
+        <section class="tutorial-card">
+            <h2>Quick Practice Checks</h2>
+            
+            <div style="margin-top: 0.5rem; padding-bottom: 0.75rem;">
+                <p><strong>Practice 1:</strong> Solve <strong>52&sup2;</strong> in your head.</p>
+                <details class="answer-reveal">
+                    <summary>Click to Reveal Solution</summary>
+                    <p>Distance is 2 &rarr; 25 + 2 = 27, 2^2 = 04 = <strong>2,704</strong>.</p>
+                </details>
+            </div>
+
+            <div style="margin-top: 0.75rem; border-top: 1px solid #e2e8f0; padding-top: 0.75rem;">
+                <p><strong>Practice 2:</strong> Solve <strong>47&sup2;</strong> in your head.</p>
+                <details class="answer-reveal">
+                    <summary>Click to Reveal Solution</summary>
+                    <p>Distance is 3 (below) &rarr; 25 - 3 = 22, 3^2 = 09 = <strong>2,209</strong>.</p>
+                </details>
+            </div>
+        </section>
+
+        <a href="index.html" class="back-btn">&larr; Back to Home</a>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 RapidMath Guide | Bancil, Jelaine &bull; Tawagun, Mohaysin &bull; Tibay, Justin</p>
+    </footer>
+</body>
+</html>

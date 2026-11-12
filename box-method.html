@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Box Method - Mental Math Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="page-header">
+        <h1>The Box Method for Large Numbers</h1>
+        <p>Advanced Multiplication Module 3 of 4</p>
+        <input class="theme-switch" type="checkbox" id="theme-switch" aria-label="Enable dark mode">
+        <label class="theme-toggle" for="theme-switch"><span class="light-label">☾ <span>Dark mode</span></span><span class="dark-label">☀ <span>Light mode</span></span></label>
+    </header>
+
+    <main class="content-container">
+        <section class="tutorial-card">
+            <h2>Mental Grid Framework</h2>
+            <p>Break large numbers apart into tens and units mentally, visualize a 2x2 grid box, multiply the easy parts separately, and add them up.</p>
+            <p>Formula: (A + B) \times (C + D) = AC + AD + BC + BD.</p>
+        </section>
+
+        <section class="tutorial-card">
+            <h2>3-Step Tutorial</h2>
+            <ol class="step-list">
+                <li><strong>Deconstruct both numbers</strong> into tens and ones (e.g., 24 becomes 20 + 4).</li>
+                <li><strong>Calculate four partial products</strong> in your head (Tens&times;Tens, Tens&times;Ones, etc.).</li>
+                <li><strong>Add all four products together</strong> to find the grand total.</li>
+            </ol>
+        </section>
+
+        <!-- Tutorial Card 1 -->
+        <section class="tutorial-card">
+            <h2>Tutorial 1: Standard 2-Digit Grid</h2>
+            <p>Visualize breaking down both factors into expanded form before summing the cross products.</p>
+            <div class="example-box" style="margin-top: 1rem;">
+                <h3>Example: 24 &times; 13</h3>
+                <p>1. Split into (20 + 4) and (10 + 3).</p>
+                <p>2. Cross products: 20\times10 = 200 | 20\times3 = 60 | 4\times10 = 40 | 4\times3 = 12.</p>
+                <p>3. Add total: 200 + 60 + 40 + 12 = {312}.</p>
+            </div>
+        </section>
+
+        <!-- Tutorial Card 2 -->
+        <section class="tutorial-card">
+            <h2>Tutorial 2: Tens &amp; Units Distribution</h2>
+            <p>An alternative workflow: multiply the first whole number by the tens part, then by the ones part.</p>
+            <div class="example-box" style="margin-top: 1rem;">
+                <h3>Example: 32 &times; 14</h3>
+                <p>1. Multiply by ten: 32 \times 10 = 320.</p>
+                <p>2. Multiply by four: 32 \times 4 = 128.</p>
+                <p>3. Add parts: 320 + 128 = {448}.</p>
+            </div>
+        </section>
+
+        <!-- Practice Checks -->
+        <section class="tutorial-card">
+            <h2>Quick Practice Checks</h2>
+            
+            <div style="margin-top: 0.5rem; padding-bottom: 0.75rem;">
+                <p><strong>Practice 1:</strong> Solve <strong>21 &times; 14</strong> using the box method.</p>
+                <details class="answer-reveal">
+                    <summary>Click to Reveal Solution</summary>
+                    <p>(20\times10) + (20\times4) + (1\times10) + (1\times4) = 200 + 80 + 10 + 4 = {294}.</p>
+                </details>
+            </div>
+
+            <div style="margin-top: 0.75rem; border-top: 1px solid #e2e8f0; padding-top: 0.75rem;">
+                <p><strong>Practice 2:</strong> Solve <strong>42 &times; 12</strong> in your head.</p>
+                <details class="answer-reveal">
+                    <summary>Click to Reveal Solution</summary>
+                    <p>(42 \times 10) + (42 \times 2) = 420 + 84 = {504}.</p>
+                </details>
+            </div>
+        </section>
+
+        <a href="index.html" class="back-btn">&larr; Back to Home</a>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 RapidMath Guide | Bancil, Jelaine &bull; Tawagun, Mohaysin &bull; Tibay, Justin</p>
+    </footer>
+</body>
+</html>

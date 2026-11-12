@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with Large Round Numbers - Mental Math Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="page-header">
+        <h1>Working with Large Round Numbers</h1>
+        <p>Advanced Multiplication Module 4 of 4</p>
+        <input class="theme-switch" type="checkbox" id="theme-switch" aria-label="Enable dark mode">
+        <label class="theme-toggle" for="theme-switch"><span class="light-label">☾ <span>Dark mode</span></span><span class="dark-label">☀ <span>Light mode</span></span></label>
+    </header>
+
+    <main class="content-container">
+        <section class="tutorial-card">
+            <h2>The Round-and-Adjust Framework</h2>
+            <p>Rounding awkward multipliers up to clean decades or hundreds makes mental arithmetic nearly instantaneous, provided you compensate at the end.</p>
+            <p>Formula: A \times (100 - X) = (A \times 100) - (A \times X).</p>
+        </section>
+
+        <section class="tutorial-card">
+            <h2>3-Step Tutorial</h2>
+            <ol class="step-list">
+                <li><strong>Round an awkward multiplier up</strong> to the nearest clean decade or hundred (e.g., treat 98 as 100).</li>
+                <li><strong>Multiply by the round number</strong> for an easy initial product.</li>
+                <li><strong>Subtract the extra amount</strong> you added to find the final adjusted answer.</li>
+            </ol>
+        </section>
+
+        <!-- Tutorial Card 1 -->
+        <section class="tutorial-card">
+            <h2>Tutorial 1: Multiplying by Numbers Near 100</h2>
+            <p>Round numbers like 98 or 99 up to 100 to simplify complex products.</p>
+            <div class="example-box" style="margin-top: 1rem;">
+                <h3>Example: 34 &times; 98</h3>
+                <p>1. Treat 98 as <strong>100</strong>.</p>
+                <p>2. Multiply: 34 \times 100 = 3,400.</p>
+                <p>3. Subtract two 34s: 3,400 - 68 = 3,332.</p>
+            </div>
+        </section>
+
+        <!-- Tutorial Card 2 -->
+        <section class="tutorial-card">
+            <h2>Tutorial 2: Multiplying by Numbers Near 50</h2>
+            <p>Adapt the rounding technique for multipliers close to 50 by using half of 100.</p>
+            <div class="example-box" style="margin-top: 1rem;">
+                <h3>Example: 26 &times; 49</h3>
+                <p>1. Treat 49 as <strong>50</strong>.</p>
+                <p>2. Multiply: (26 \times 100) \div 2 = 1,300.</p>
+                <p>3. Subtract one 26: 1,300 - 26 = 1,274.</p>
+            </div>
+        </section>
+
+        <!-- Practice Checks -->
+        <section class="tutorial-card">
+            <h2>Quick Practice Checks</h2>
+            
+            <div style="margin-top: 0.5rem; padding-bottom: 0.75rem;">
+                <p><strong>Practice 1:</strong> Solve <strong>45 &times; 99</strong> using round numbers.</p>
+                <details class="answer-reveal">
+                    <summary>Click to Reveal Solution</summary>
+                    <p>45 \times 100 = 4,500 minus 45 = <strong>4,455</strong>.</p>
+                </details>
+            </div>
+
+            <div style="margin-top: 0.75rem; border-top: 1px solid #e2e8f0; padding-top: 0.75rem;">
+                <p><strong>Practice 2:</strong> Solve <strong>32 &times; 98</strong> in your head.</p>
+                <details class="answer-reveal">
+                    <summary>Click to Reveal Solution</summary>
+                    <p>32 \times 100 = 3,200 minus sixty-four (32 \times 2) = <strong>3,136</strong>.</p>
+                </details>
+            </div>
+        </section>
+
+        <a href="index.html" class="back-btn">&larr; Back to Home</a>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 RapidMath Guide | Bancil, Jelaine &bull; Tawagun, Mohaysin &bull; Tibay, Justin</p>
+    </footer>
+</body>
+</html>

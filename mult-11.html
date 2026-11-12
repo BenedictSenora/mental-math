@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplying by 11 - Mental Math Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="page-header">
+        <h1>Multiplying by 11: The Split &amp; Add Trick</h1>
+        <p>Core Arithmetic Module 3 of 6</p>
+        <input class="theme-switch" type="checkbox" id="theme-switch" aria-label="Enable dark mode">
+        <label class="theme-toggle" for="theme-switch"><span class="light-label">☾ <span>Dark mode</span></span><span class="dark-label">☀ <span>Light mode</span></span></label>
+    </header>
+
+    <main class="content-container">
+        <section class="tutorial-card">
+            <h2>Why Multiplying by 11 Is Instant</h2>
+            <p>You don't need to multiply at all to multiply any two-digit number by 11—it is purely a visual pattern of splitting digits and adding them together.</p>
+            <p>Pattern Formula: For a two-digit number AB, the result is A \mid (A+B) \mid B.</p>
+        </section>
+
+        <section class="tutorial-card">
+            <h2>3-Step Tutorial</h2>
+            <ol class="step-list">
+                <li><strong>Separate the two digits</strong> of the number to leave a blank space in the middle.</li>
+                <li><strong>Add the two digits together</strong> in your head.</li>
+                <li><strong>Place the sum in the middle space</strong> (carry the 1 to the left digit if the sum is 10 or more).</li>
+            </ol>
+        </section>
+
+        <!-- Tutorial Card 1 -->
+        <section class="tutorial-card">
+            <h2>Tutorial 1: Standard Split (No Carry)</h2>
+            <p>When the two digits add up to 9 or less, simply drop their sum right between them.</p>
+            <div class="example-box" style="margin-top: 1rem;">
+                <h3>Example: 35 &times; 11</h3>
+                <p>1. Split 3 and 5: <strong>3 _ 5</strong>.</p>
+                <p>2. Add digits: 3 + 5 = <strong>8</strong>.</p>
+                <p>3. Insert in middle: <strong>385</strong>.</p>
+            </div>
+        </section>
+
+        <!-- Tutorial Card 2 -->
+        <section class="tutorial-card">
+            <h2>Tutorial 2: Split with a Carry (Sum &ge; 10)</h2>
+            <p>If the two digits add up to 10 or higher, keep the ones digit in the middle and add 1 to the first digit.</p>
+            <div class="example-box" style="margin-top: 1rem;">
+                <h3>Example: 76 &times; 11</h3>
+                <p>1. Split 7 and 6: <strong>7 _ 6</strong>.</p>
+                <p>2. Add digits: 7 + 6 = <strong>13</strong>.</p>
+                <p>3. Put 3 in the middle and add 1 to 7: <strong>836</strong>.</p>
+            </div>
+        </section>
+
+        <!-- Practice Checks -->
+        <section class="tutorial-card">
+            <h2>Quick Practice Checks</h2>
+            
+            <div style="margin-top: 0.5rem; padding-bottom: 0.75rem;">
+                <p><strong>Practice 1:</strong> Solve <strong>42 &times; 11</strong> in your head.</p>
+                <details class="answer-reveal">
+                    <summary>Click to Reveal Solution</summary>
+                    <p>4 + 2 = 6 &rarr; place 6 in the middle = <strong>462</strong>.</p>
+                </details>
+            </div>
+
+            <div style="margin-top: 0.75rem; border-top: 1px solid #e2e8f0; padding-top: 0.75rem;">
+                <p><strong>Practice 2:</strong> Solve <strong>85 &times; 11</strong> with carrying.</p>
+                <details class="answer-reveal">
+                    <summary>Click to Reveal Solution</summary>
+                    <p>8 + 5 = 13 &rarr; put 3 in middle, add 1 to 8 = <strong>935</strong>.</p>
+                </details>
+            </div>
+        </section>
+
+        <a href="index.html" class="back-btn">&larr; Back to Home</a>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 RapidMath Guide | Bancil, Jelaine &bull; Tawagun, Mohaysin &bull; Tibay, Justin</p>
+    </footer>
+</body>
+</html>

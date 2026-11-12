@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Tax &amp; Discount Calculation - Mental Math Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="page-header">
+        <h1>Sales Tax &amp; Discount Calculation</h1>
+        <p>Real-World Applications Module 3 of 4</p>
+        <input class="theme-switch" type="checkbox" id="theme-switch" aria-label="Enable dark mode">
+        <label class="theme-toggle" for="theme-switch"><span class="light-label">☾ <span>Dark mode</span></span><span class="dark-label">☀ <span>Light mode</span></span></label>
+    </header>
+
+    <main class="content-container">
+        <section class="tutorial-card">
+            <h2>The Complementary Percentage Concept</h2>
+            <p>When calculating sale prices (like "30% off"), don't calculate the discount and subtract it—instead, directly calculate the remaining percentage you actually pay (70%).</p>
+            <p>Formula: \text{Sale Price} = \text{Original Price} \times (100\% - \text{Discount}\%).</p>
+        </section>
+
+        <section class="tutorial-card">
+            <h2>3-Step Tutorial</h2>
+            <ol class="step-list">
+                <li><strong>Subtract the discount percentage from 100%</strong> to find the portion you pay.</li>
+                <li><strong>Convert that percentage into a decimal multiplier</strong> (e.g., 70% becomes 0.7).</li>
+                <li><strong>Multiply the original price</strong> by that factor.</li>
+            </ol>
+        </section>
+
+        <!-- Tutorial Card 1 -->
+        <section class="tutorial-card">
+            <h2>Tutorial 1: Direct Discount Pricing</h2>
+            <p>Skip the subtraction step at the end by multiplying by the complementary percentage right away.</p>
+            <div class="example-box" style="margin-top: 1rem;">
+                <h3>Example: A $50 Shirt at 30% Off</h3>
+                <p>1. Since it is 30% off, you pay <strong>70%</strong> ($100\% - 30\%$).</p>
+                <p>2. Multiply: $50 &times; 0.70 = <strong>$35.00 final price</strong>.</p>
+            </div>
+        </section>
+
+        <!-- Tutorial Card 2 -->
+        <section class="tutorial-card">
+            <h2>Tutorial 2: Quick Sales Tax Estimation</h2>
+            <p>For a standard ~8% or 10% sales tax, find 10% first and adjust slightly downward if needed.</p>
+            <div class="example-box" style="margin-top: 1rem;">
+                <h3>Example: $120 Item with 10% Tax</h3>
+                <p>1. Find 10% tax: <strong>$12.00</strong>.</p>
+                <p>2. Add to original price: $120 + $12 = <strong>$132.00 total</strong>.</p>
+            </div>
+        </section>
+
+        <!-- Practice Checks -->
+        <section class="tutorial-card">
+            <h2>Quick Practice Checks</h2>
+            
+            <div style="margin-top: 0.5rem; padding-bottom: 0.75rem;">
+                <p><strong>Practice 1:</strong> How much do you pay for a <strong>$40 jacket at 20% off</strong>?</p>
+                <details class="answer-reveal">
+                    <summary>Click to Reveal Solution</summary>
+                    <p>You pay 80% &rarr; $40 &times; 0.80 = <strong>$32.00</strong>.</p>
+                </details>
+            </div>
+
+            <div style="margin-top: 0.75rem; border-top: 1px solid #e2e8f0; padding-top: 0.75rem;">
+                <p><strong>Practice 2:</strong> What is the total cost of a <strong>$90 pair of shoes with 10% tax</strong>?</p>
+                <details class="answer-reveal">
+                    <summary>Click to Reveal Solution</summary>
+                    <p>10% tax is $9 &rarr; $90 + $9 = <strong>$99.00</strong>.</p>
+                </details>
+            </div>
+        </section>
+
+        <a href="index.html" class="back-btn">&larr; Back to Home</a>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 RapidMath Guide | Bancil, Jelaine &bull; Tawagun, Mohaysin &bull; Tibay, Justin</p>
+    </footer>
+</body>
+</html>

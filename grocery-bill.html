@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Bill Estimation - Mental Math Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="page-header">
+        <h1>Grocery Bill Estimation Framework</h1>
+        <p>Real-World Applications Module 4 of 4</p>
+        <input class="theme-switch" type="checkbox" id="theme-switch" aria-label="Enable dark mode">
+        <label class="theme-toggle" for="theme-switch"><span class="light-label">☾ <span>Dark mode</span></span><span class="dark-label">☀ <span>Light mode</span></span></label>
+    </header>
+
+    <main class="content-container">
+        <section class="tutorial-card">
+            <h2>The Ceiling-Rounding Concept</h2>
+            <p>Avoid checkout surprises by rounding item prices up to the nearest whole dollar as you place items in your cart.</p>
+            <p>Pattern: Always rounding up creates an automatic safety buffer that covers local sales tax.</p>
+        </section>
+
+        <section class="tutorial-card">
+            <h2>3-Step Tutorial</h2>
+            <ol class="step-list">
+                <li><strong>Round every item's price up</strong> to the next whole dollar (e.g., $3.29 becomes $4).</li>
+                <li><strong>Keep a running left-to-right total</strong> in your head as you shop.</li>
+                <li><strong>Treat the excess cents</strong> from rounding up as your built-in tax cushion.</li>
+            </ol>
+        </section>
+
+        <!-- Tutorial Card 1 -->
+        <section class="tutorial-card">
+            <h2>Tutorial 1: Round-Up Running Total</h2>
+            <p>Never try to add cents in your head while walking through store aisles—convert everything to whole integers.</p>
+            <div class="example-box" style="margin-top: 1rem;">
+                <h3>Example: Cart Items ($4.89, $2.15, $6.49)</h3>
+                <p>1. Round each price up: <strong>$5 + $3 + $7</strong>.</p>
+                <p>2. Add whole dollars: $5 + $3 = $8, then + $7 = <strong>$15.00 safe estimate</strong>.</p>
+            </div>
+        </section>
+
+        <!-- Tutorial Card 2 -->
+        <section class="tutorial-card">
+            <h2>Tutorial 2: Clustering Dollar Pairs</h2>
+            <p>Group items whose cents complement each other (e.g., .75 and .25) into clean whole dollars before adding.</p>
+            <div class="example-box" style="margin-top: 1rem;">
+                <h3>Example: $3.75 and $4.25</h3>
+                <p>1. Combine the cents: $.75 + $.25 = $1.00.</p>
+                <p>2. Add whole dollars: $3 + $4 + $1 = <strong>$8.00 exact</strong>.</p>
+            </div>
+        </section>
+
+        <!-- Practice Checks -->
+        <section class="tutorial-card">
+            <h2>Quick Practice Checks</h2>
+            
+            <div style="margin-top: 0.5rem; padding-bottom: 0.75rem;">
+                <p><strong>Practice 1:</strong> Estimate a cart with items costing <strong>$3.25, $8.99, and $1.49</strong> using round-up.</p>
+                <details class="answer-reveal">
+                    <summary>Click to Reveal Solution</summary>
+                    <p>Round up &rarr; $4 + $9 + $2 = <strong>$15.00</strong>.</p>
+                </details>
+            </div>
+
+            <div style="margin-top: 0.75rem; border-top: 1px solid #e2e8f0; padding-top: 0.75rem;">
+                <p><strong>Practice 2:</strong> Calculate <strong>$5.60 + $2.40</strong> using dollar clustering.</p>
+                <details class="answer-reveal">
+                    <summary>Click to Reveal Solution</summary>
+                    <p>$.60 + $.40 = $1.00 &rarr; $5 + $2 + $1 = <strong>$8.00</strong>.</p>
+                </details>
+            </div>
+        </section>
+
+        <a href="index.html" class="back-btn">&larr; Back to Home</a>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 RapidMath Guide | Bancil, Jelaine &bull; Tawagun, Mohaysin &bull; Tibay, Justin</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Addition Tutorial - Mental Math Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="page-header">
+        <h1>Fast Addition: Left-to-Right Method</h1>
+        <p>Core Arithmetic Module 1 of 6</p>
+        <input class="theme-switch" type="checkbox" id="theme-switch" aria-label="Enable dark mode">
+        <label class="theme-toggle" for="theme-switch"><span class="light-label">☾ <span>Dark mode</span></span><span class="dark-label">☀ <span>Light mode</span></span></label>
+    </header>
+
+    <main class="content-container">
+        <section class="tutorial-card">
+            <h2>Why Traditional Addition Is Slow</h2>
+            <p>In school, you learned to add numbers from right to left (ones column first, then carrying over). That works on paper, but in your head, it forces you to hold numbers backward.</p>
+            <p>Speed math flips the process: <strong>always add from left to right</strong> by breaking numbers into place values (hundreds, tens, ones).</p>
+        </section>
+
+        <section class="tutorial-card">
+            <h2>3-Step Tutorial</h2>
+            <ol class="step-list">
+                <li><strong>Split the second number</strong> into tens and ones (or hundreds, tens, and ones).</li>
+                <li><strong>Add the largest place value first</strong> to the first number to get a running total.</li>
+                <li><strong>Add the remaining smaller digits</strong> to your running total to get the final answer.</li>
+            </ol>
+        </section>
+
+        <!-- Tutorial Card 1 -->
+        <section class="tutorial-card">
+            <h2>Tutorial 1: Left-to-Right Addition</h2>
+            <p>Always add numbers from left to right (tens first, then ones) so you calculate the most significant digits immediately.</p>
+            <div class="example-box" style="margin-top: 1rem;">
+                <h3>Example: 47 + 38</h3>
+                <p>1. Split 38 into 30 + 8.</p>
+                <p>2. Add tens: 47 + 30 = <strong>77</strong>.</p>
+                <p>3. Add ones: 77 + 8 = <strong>85</strong>.</p>
+            </div>
+        </section>
+
+        <!-- Tutorial Card 2 -->
+        <section class="tutorial-card">
+            <h2>Tutorial 2: The Compensation Method</h2>
+            <p>Round one number up to the nearest clean decade (like 10, 20, or 50), do the easy addition, and subtract the extra amount at the end.</p>
+            <div class="example-box" style="margin-top: 1rem;">
+                <h3>Example: 56 + 39</h3>
+                <p>1. Treat 39 as 40 (added 1 extra).</p>
+                <p>2. Add: 56 + 40 = 96.</p>
+                <p>3. Subtract the extra 1: <strong>95</strong>.</p>
+            </div>
+        </section>
+
+        <!-- Practice Checks -->
+        <section class="tutorial-card">
+            <h2>Quick Practice Checks</h2>
+            
+            <div style="margin-top: 0.5rem; padding-bottom: 0.75rem;">
+                <p><strong>Practice 1:</strong> Try solving <strong>68 + 29</strong> in your head.</p>
+                <details class="answer-reveal">
+                    <summary>Click to Reveal Solution</summary>
+                    <p>Split 29 into 20 + 9 &rarr; 68 + 20 = 88 &rarr; 88 + 9 = <strong>97</strong>.</p>
+                </details>
+            </div>
+
+            <div style="margin-top: 0.75rem; border-top: 1px solid #e2e8f0; padding-top: 0.75rem;">
+                <p><strong>Practice 2:</strong> Try solving <strong>74 + 49</strong> using compensation.</p>
+                <details class="answer-reveal">
+                    <summary>Click to Reveal Solution</summary>
+                    <p>Treat 49 as 50 &rarr; 74 + 50 = 124 minus 1 = <strong>123</strong>.</p>
+                </details>
+            </div>
+        </section>
+
+        <a href="index.html" class="back-btn">&larr; Back to Home</a>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 RapidMath Guide | Bancil, Jelanie &bull; Tawagun, Mohaysin &bull; Tibay, Justin</p>
+    </footer>
+</body>
+</html>

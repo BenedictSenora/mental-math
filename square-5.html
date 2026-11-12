@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Squaring Numbers Ending in 5 - Mental Math Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="page-header">
+        <h1>Squaring Numbers Ending in 5</h1>
+        <p>Core Arithmetic Module 5 of 6</p>
+        <input class="theme-switch" type="checkbox" id="theme-switch" aria-label="Enable dark mode">
+        <label class="theme-toggle" for="theme-switch"><span class="light-label">☾ <span>Dark mode</span></span><span class="dark-label">☀ <span>Light mode</span></span></label>
+    </header>
+
+    <main class="content-container">
+        <section class="tutorial-card">
+            <h2>The Visual Pattern of 5s</h2>
+            <p>Every single number ending in 5, when squared, <strong>always ends in 25</strong>. You only need to calculate the front digits.</p>
+            <p>Formula: For a number N5, the answer is [N \times (N + 1)] \mid 25.</p>
+        </section>
+
+        <section class="tutorial-card">
+            <h2>3-Step Tutorial</h2>
+            <ol class="step-list">
+                <li><strong>Look at the first digit(s)</strong> before the 5.</li>
+                <li><strong>Multiply that digit by the next higher number</strong> (e.g., if it's 3, do 3 \times 4).</li>
+                <li><strong>Write 25 right after</strong> that product.</li>
+            </ol>
+        </section>
+
+        <!-- Tutorial Card 1 -->
+        <section class="tutorial-card">
+            <h2>Tutorial 1: Two-Digit Squares</h2>
+            <p>Multiply the tens digit by itself plus one, then lock in 25 at the end.</p>
+            <div class="example-box" style="margin-top: 1rem;">
+                <h3>Example: 35&sup2;</h3>
+                <p>1. First digit is <strong>3</strong>. Next higher number is <strong>4</strong>.</p>
+                <p>2. Multiply: 3 &times; 4 = <strong>12</strong>.</p>
+                <p>3. Attach 25: <strong>1,225</strong>.</p>
+            </div>
+        </section>
+
+        <!-- Tutorial Card 2 -->
+        <section class="tutorial-card">
+            <h2>Tutorial 2: Three-Digit Squares</h2>
+            <p>The exact same pattern works for three-digit numbers—treat the first two digits as one number.</p>
+            <div class="example-box" style="margin-top: 1rem;">
+                <h3>Example: 105&sup2;</h3>
+                <p>1. First digits are <strong>10</strong>. Next higher number is <strong>11</strong>.</p>
+                <p>2. Multiply: 10 &times; 11 = <strong>110</strong>.</p>
+                <p>3. Attach 25: <strong>11,025</strong>.</p>
+            </div>
+        </section>
+
+        <!-- Practice Checks -->
+        <section class="tutorial-card">
+            <h2>Quick Practice Checks</h2>
+            
+            <div style="margin-top: 0.5rem; padding-bottom: 0.75rem;">
+                <p><strong>Practice 1:</strong> Solve <strong>65&sup2;</strong> in your head.</p>
+                <details class="answer-reveal">
+                    <summary>Click to Reveal Solution</summary>
+                    <p>6 &times; 7 = 42 &rarr; attach 25 = <strong>4,225</strong>.</p>
+                </details>
+            </div>
+
+            <div style="margin-top: 0.75rem; border-top: 1px solid #e2e8f0; padding-top: 0.75rem;">
+                <p><strong>Practice 2:</strong> Solve <strong>85&sup2;</strong> in your head.</p>
+                <details class="answer-reveal">
+                    <summary>Click to Reveal Solution</summary>
+                    <p>8 &times; 9 = 72 &rarr; attach 25 = <strong>7,225</strong>.</p>
+                </details>
+            </div>
+        </section>
+
+        <a href="index.html" class="back-btn">&larr; Back to Home</a>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 RapidMath Guide | Bancil, Jelaine &bull; Tawagun, Mohaysin &bull; Tibay, Justin</p>
+    </footer>
+</body>
+</html>

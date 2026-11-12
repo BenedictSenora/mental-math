@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divisibility Rules 3, 6, 9 - Mental Math Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="page-header">
+        <h1>Divisibility Rules for 3, 6, and 9</h1>
+        <p>Divisibility &amp; Fractions Module 1 of 4</p>
+        <input class="theme-switch" type="checkbox" id="theme-switch" aria-label="Enable dark mode">
+        <label class="theme-toggle" for="theme-switch"><span class="light-label">☾ <span>Dark mode</span></span><span class="dark-label">☀ <span>Light mode</span></span></label>
+    </header>
+
+    <main class="content-container">
+        <section class="tutorial-card">
+            <h2>The Digit Sum Concept</h2>
+            <p>Instead of executing long division, you can instantly determine if a massive number divides evenly by 3, 6, or 9 simply by adding up its individual digits.</p>
+        </section>
+
+        <section class="tutorial-card">
+            <h2>3-Step Tutorial</h2>
+            <ol class="step-list">
+                <li><strong>Add all individual digits</strong> of the target number together.</li>
+                <li><strong>Check if the sum</strong> is divisible by 3 (for rule of 3) or 9 (for rule of 9).</li>
+                <li><strong>For the rule of 6</strong>, ensure the number is also even (ends in 0, 2, 4, 6, 8).</li>
+            </ol>
+        </section>
+
+        <!-- Tutorial Card 1 -->
+        <section class="tutorial-card">
+            <h2>Tutorial 1: Rules for 3 and 9</h2>
+            <p>Sum the digits recursively until you get a single-digit number to verify divisibility.</p>
+            <div class="example-box" style="margin-top: 1rem;">
+                <h3>Example: Is 4,287 divisible by 9?</h3>
+                <p>1. Add digits: 4 + 2 + 8 + 7 = 21.</p>
+                <p>2. Add digits again: 2 + 1 = 3.</p>
+                <p>3. Since 3 is not divisible by 9, <strong>4,287 is not divisible by 9</strong>.</p>
+            </div>
+        </section>
+
+        <!-- Tutorial Card 2 -->
+        <section class="tutorial-card">
+            <h2>Tutorial 2: Rule for 6 (Even + Divisible by 3)</h2>
+            <p>A number is divisible by 6 if and only if it passes both the even-number test and the rule of 3.</p>
+            <div class="example-box" style="margin-top: 1rem;">
+                <h3>Example: Is 2,316 divisible by 6?</h3>
+                <p>1. Check even: Ends in 6 (Yes, it is even).</p>
+                <p>2. Check rule of 3: 2 + 3 + 1 + 6 = 12 (Divisible by 3).</p>
+                <p>3. <strong>2,316 is fully divisible by 6</strong>.</p>
+            </div>
+        </section>
+
+        <!-- Practice Checks -->
+        <section class="tutorial-card">
+            <h2>Quick Practice Checks</h2>
+            
+            <div style="margin-top: 0.5rem; padding-bottom: 0.75rem;">
+                <p><strong>Practice 1:</strong> Is <strong>5,436</strong> divisible by 9?</p>
+                <details class="answer-reveal">
+                    <summary>Click to Reveal Solution</summary>
+                    <p>5 + 4 + 3 + 6 = 18 (1 + 8 = 9). Yes, it is fully divisible by 9!</p>
+                </details>
+            </div>
+
+            <div style="margin-top: 0.75rem; border-top: 1px solid #e2e8f0; padding-top: 0.75rem;">
+                <p><strong>Practice 2:</strong> Is <strong>412</strong> divisible by 6?</p>
+                <details class="answer-reveal">
+                    <summary>Click to Reveal Solution</summary>
+                    <p>It is even, but 4 + 1 + 2 = 7 (not divisible by 3). Therefore, <strong>No</strong>.</p>
+                </details>
+            </div>
+        </section>
+
+        <a href="index.html" class="back-btn">&larr; Back to Home</a>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 RapidMath Guide | Bancil, Jelaine &bull; Tawagun, Mohaysin &bull; Tibay, Justin</p>
+    </footer>
+</body>
+</html>

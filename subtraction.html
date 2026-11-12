@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Left-to-Right Subtraction - Mental Math Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="page-header">
+        <h1>Left-to-Right Subtraction</h1>
+        <p>Core Arithmetic Module 2 of 6</p>
+        <input class="theme-switch" type="checkbox" id="theme-switch" aria-label="Enable dark mode">
+        <label class="theme-toggle" for="theme-switch"><span class="light-label">☾ <span>Dark mode</span></span><span class="dark-label">☀ <span>Light mode</span></span></label>
+    </header>
+
+    <main class="content-container">
+        <section class="tutorial-card">
+            <h2>Why Traditional Subtraction Is Slow</h2>
+            <p>Borrowing and carrying from right to left forces you to cross out numbers and hold messy remainders in your head.</p>
+            <p>Speed math simplifies subtraction: <strong>work from left to right</strong> or round up to clean numbers and add back the difference.</p>
+        </section>
+
+        <section class="tutorial-card">
+            <h2>3-Step Tutorial</h2>
+            <ol class="step-list">
+                <li><strong>Split the number being subtracted</strong> into tens and ones.</li>
+                <li><strong>Subtract the tens first</strong> from your starting number.</li>
+                <li><strong>Subtract the remaining ones</strong> to get your final answer.</li>
+            </ol>
+        </section>
+
+        <!-- Tutorial Card 1 -->
+        <section class="tutorial-card">
+            <h2>Tutorial 1: Left-to-Right Place Splitting</h2>
+            <p>Break the second number down into clean place values and subtract step-by-step from largest to smallest.</p>
+            <div class="example-box" style="margin-top: 1rem;">
+                <h3>Example: 84 - 36</h3>
+                <p>1. Split 36 into 30 + 6.</p>
+                <p>2. Subtract tens: 84 - 30 = <strong>54</strong>.</p>
+                <p>3. Subtract ones: 54 - 6 = <strong>48</strong>.</p>
+            </div>
+        </section>
+
+        <!-- Tutorial Card 2 -->
+        <section class="tutorial-card">
+            <h2>Tutorial 2: The Rounding &amp; Add-Back Method</h2>
+            <p>When subtracting a number ending in 7, 8, or 9, round it up to the nearest ten, subtract, and add back the extra amount.</p>
+            <div class="example-box" style="margin-top: 1rem;">
+                <h3>Example: 92 - 48</h3>
+                <p>1. Treat 48 as 50 (rounded up by 2).</p>
+                <p>2. Subtract: 92 - 50 = 42.</p>
+                <p>3. Add back the extra 2: 42 + 2 = <strong>44</strong>.</p>
+            </div>
+        </section>
+
+        <!-- Practice Checks -->
+        <section class="tutorial-card">
+            <h2>Quick Practice Checks</h2>
+            
+            <div style="margin-top: 0.5rem; padding-bottom: 0.75rem;">
+                <p><strong>Practice 1:</strong> Solve <strong>73 - 25</strong> using left-to-right splitting.</p>
+                <details class="answer-reveal">
+                    <summary>Click to Reveal Solution</summary>
+                    <p>73 - 20 = 53 &rarr; 53 - 5 = <strong>48</strong>.</p>
+                </details>
+            </div>
+
+            <div style="margin-top: 0.75rem; border-top: 1px solid #e2e8f0; padding-top: 0.75rem;">
+                <p><strong>Practice 2:</strong> Solve <strong>85 - 39</strong> using rounding.</p>
+                <details class="answer-reveal">
+                    <summary>Click to Reveal Solution</summary>
+                    <p>85 - 40 = 45 &rarr; add back 1 = <strong>46</strong>.</p>
+                </details>
+            </div>
+        </section>
+
+        <a href="index.html" class="back-btn">&larr; Back to Home</a>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 RapidMath Guide | Bancil, Jelaine &bull; Tawagun, Mohaysin &bull; Tibay, Justin</p>
+    </footer>
+</body>
+</html>
