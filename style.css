@@ -80,6 +80,38 @@ body {
 
 .page-header p { position: relative; z-index: 1; color: #d7e1ff; font-size: 1.02rem; }
 
+.home-hero { min-height: 520px; display: grid; align-items: center; padding: 6rem 1.5rem 4.5rem; text-align: left; }
+.home-hero::after { right: 7%; bottom: 2rem; font-size: 3rem; }
+.hero-inner { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(280px, .85fr); align-items: center; gap: clamp(2rem, 7vw, 6rem); width: min(100%, 1080px); margin: 0 auto; }
+.hero-copy { position: relative; z-index: 1; }
+.hero-kicker { display: inline-flex; align-items: center; gap: .5rem; margin-bottom: 1rem; padding: .4rem .75rem; border: 1px solid rgba(255,255,255,.25); border-radius: 999px; background: rgba(255,255,255,.1); color: #ffe6a8 !important; font-size: .87rem !important; font-weight: 700; }
+.hero-kicker span { color: #ffbb54; }
+.home-hero h1 { max-width: 640px; margin: 0 0 1rem; font-size: clamp(2.7rem, 6vw, 4.5rem); }
+.home-hero h1 span { color: #ffca73; }
+.hero-description { max-width: 570px; color: #e0dcff !important; font-size: clamp(1rem, 1.5vw, 1.15rem) !important; line-height: 1.75; }
+.hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .85rem; margin-top: 1.75rem; }
+.hero-primary, .hero-secondary { display: inline-flex; align-items: center; justify-content: center; gap: .65rem; min-height: 50px; padding: .75rem 1.15rem; border-radius: 10px; text-decoration: none; font-weight: 700; transition: transform .18s ease, background .18s ease, box-shadow .18s ease; }
+.hero-primary { background: linear-gradient(110deg, #ff8a70, #ffbd58); color: #32184e; box-shadow: 0 9px 24px rgba(255,126,104,.22); }
+.hero-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 28px rgba(255,126,104,.34); }
+.hero-secondary { border: 1px solid rgba(255,255,255,.35); color: white; }
+.hero-secondary:hover { transform: translateY(-2px); background: rgba(255,255,255,.12); }
+.hero-primary:focus-visible, .hero-secondary:focus-visible { outline: 3px solid #ffca73; outline-offset: 3px; }
+.hero-visual { position: relative; display: grid; min-height: 300px; place-items: center; }
+.math-card { position: relative; z-index: 1; width: min(100%, 350px); padding: 1.7rem; border: 1px solid rgba(255,255,255,.75); border-radius: 22px; background: linear-gradient(145deg, rgba(255,255,255,.98), rgba(250,244,255,.96)); color: #281951; box-shadow: 0 28px 65px rgba(19,9,58,.3); transform: rotate(2deg); }
+.math-card-label { display: inline-block; margin-bottom: 1.1rem; padding: .28rem .6rem; border-radius: 999px; background: #fff0e8; color: #b64a60; font-size: .76rem; font-weight: 700; letter-spacing: .025em; }
+.math-equation { display: flex; align-items: center; gap: .55rem; font: 800 clamp(1.55rem, 3vw, 2.2rem)/1.2 Manrope, sans-serif; letter-spacing: -.04em; }
+.math-equation .math-operator { color: #ed6684; }
+.math-equation .math-equals { margin-left: auto; color: #9b91b4; font-weight: 500; }
+.math-equation strong { color: #5c3ce5; }
+.math-divider { height: 1px; margin: 1.15rem 0 .8rem; background: #e8e2f2; }
+.math-card > p { display: flex; justify-content: space-between; color: #716987; font-size: .95rem; }
+.math-card > p + p { margin-top: .35rem; }
+.math-card > p b { color: #2b2050; }
+.math-spark { position: absolute; top: -.9rem; right: 1.2rem; color: #ff9774; font-size: 2.1rem; }
+.hero-orbit { position: absolute; display: grid; place-items: center; width: 52px; height: 52px; border: 1px solid rgba(255,255,255,.32); border-radius: 16px; background: rgba(255,255,255,.12); color: #ffd47f; font: 700 1.55rem Manrope, sans-serif; backdrop-filter: blur(8px); }
+.hero-orbit-one { top: 1.2rem; right: .25rem; transform: rotate(12deg); }
+.hero-orbit-two { bottom: 1.25rem; left: .2rem; transform: rotate(-12deg); }
+
 .content-container {
     width: min(100% - 2rem, 880px);
     margin: 2.5rem auto;
@@ -155,6 +187,12 @@ body {
     .tutorial-card { border-radius: 14px; }
     .module-list { grid-template-columns: 1fr; }
     .theme-toggle { top: .75rem; right: .75rem; padding: .5rem .7rem; }
+    .home-hero { min-height: auto; padding: 5.5rem 1.25rem 3rem; }
+    .hero-inner { grid-template-columns: 1fr; gap: 1.3rem; }
+    .home-hero h1 { font-size: clamp(2.55rem, 12vw, 3.5rem); }
+    .hero-visual { min-height: 255px; }
+    .math-card { padding: 1.35rem; }
+    .hero-orbit-one { right: .5rem; }
 }
 
 /* Dark theme is controlled by the native checkbox, so the toggle needs no script. */
